@@ -1,3 +1,6 @@
+"set encodings
+set fileencodings=utf-8,gbk
+
 filetype indent on
 "PERSONAL SETTINGS
 set nowrap
