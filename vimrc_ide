@@ -26,10 +26,10 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 
 " 突出显示当前行等 不喜欢这种定位可注解
-set cursorcolumn
+"set cursorcolumn
 set cursorline              " 突出显示当前行
-hi cursorcolumn cterm=NONE ctermbg=black ctermfg=NONE guibg=darkgrey guifg=white
-hi cursorline   cterm=NONE ctermbg=black ctermfg=NONE guibg=darkgrey guifg=white          " 突出显示当前行
+hi cursorcolumn cterm=NONE ctermbg=white ctermfg=NONE guibg=darkgrey guifg=white
+hi cursorline   cterm=NONE ctermbg=white ctermfg=NONE guibg=darkgrey guifg=white          " 突出显示当前行
 
 
 "drop-down menu options
