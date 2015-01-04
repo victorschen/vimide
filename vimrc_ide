@@ -50,7 +50,6 @@ if has("cscope")
     nmap ,t :cs find t <C-R>=expand("<cword>")<CR><CR>
    
     nmap . <C-T>
-    nmap ,r <C-]>
 endif
 
 "drop-down menu options
