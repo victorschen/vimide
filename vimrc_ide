@@ -49,8 +49,8 @@ if has("cscope")
     nmap ,s :cs find s <C-R>=expand("<cword>")<CR><CR>
     nmap ,t :cs find t <C-R>=expand("<cword>")<CR><CR>
    
-    nmap ,b <C-T>
-    nmap ,n <C-]>
+    nmap . <C-T>
+    nmap ,r <C-]>
 endif
 
 "drop-down menu options
