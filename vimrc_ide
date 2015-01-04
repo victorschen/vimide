@@ -31,6 +31,27 @@ set cursorline              " 突出显示当前行
 hi cursorcolumn cterm=NONE ctermbg=white ctermfg=NONE guibg=darkgrey guifg=white
 hi cursorline   cterm=NONE ctermbg=white ctermfg=NONE guibg=darkgrey guifg=white          " 突出显示当前行
 
+" cscope设置
+if has("cscope")                                                                
+    set cst
+    if filereadable("cscope.out")
+            cs add $PWD/cscope.out
+    elseif $CSCOPE_DB  != ""
+            cs add $CSCOPE_DB
+    endif
+   
+    nmap ,c :cs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap ,d :cs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap ,e :cs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap ,f :cs find f <C-R>=expand("<cword>")<CR><CR>
+    nmap ,g :cs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap ,i :cs find i <C-R>=expand("<cword>")<CR><CR>
+    nmap ,s :cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap ,t :cs find t <C-R>=expand("<cword>")<CR><CR>
+   
+    nmap ,b <C-T>
+    nmap ,n <C-]>
+endif
 
 "drop-down menu options
 set wildmenu
