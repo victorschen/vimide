@@ -457,8 +457,8 @@ let g:molokai_original=1
 set background=dark
 set t_Co=256
 if(has("gui_running"))
-    colorscheme solarized
-    "colorscheme molokai
+    "colorscheme solarized
+    colorscheme molokai
     "colorscheme phd
 "4.窗口设置
     set guioptions+=c   " use text inform
@@ -475,5 +475,5 @@ else
 endif    
          
 set cursorline
-set cursorcolumn
+"set cursorcolumn
          
